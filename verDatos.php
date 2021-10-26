@@ -1,11 +1,16 @@
 <?php 
-Session_start();
+session_start();
 
+#cerrar sesión
 if(isset($_GET['salir'])){
   session_unset();
 }
 
+
+#Iniciar sesion
 if(isset($_SESSION['id'])){
+
+	
 
 #Conexion a BD
 require_once('conex.php');
@@ -61,17 +66,17 @@ $resultadoDatos=$conexion->query($verDatos);
 		
 		<td><a href="verDatos.php?idEliminar= <?php echo $r->id; ?>">Eliminar</a></td>
 	</tr>
-  
+  <?php  } ?>
 </table>
 <br />
    <br />
-
-	 <a href="verDatos.php?salir=1"> Cerrar Sesion </a>
-	 <br />
+<a href="verDatos.php?salir=1">Cerrar sesión</a>
  </body>
  </html>
 
- <?php }
-else{
-  header('Location: index.php');
-}?>
+ <?php 
+ }
+ else{
+ 	header('Location: index.php');
+ } 
+	?>
