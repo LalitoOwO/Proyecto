@@ -1,4 +1,11 @@
 <?php 
+Session_start();
+
+if(isset($_GET['salir'])){
+  session_unset();
+}
+
+if(isset($_SESSION['id'])){
 
 #Conexion a BD
 require_once('conex.php');
@@ -61,4 +68,8 @@ $resultadoDatos=$conexion->query($verDatos);
 
  </body>
  </html>
- 
+
+ <?php }
+else{
+  header('Location: index.php');
+}?>
