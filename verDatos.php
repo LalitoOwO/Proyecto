@@ -58,7 +58,6 @@ $resultadoDatos=$conexion->query($verDatos);
 </table>
 <br />
    <br />
-<a href="verDatos.php?salir=1">Cerrar sesión</a>
 
  </body>
  </html>
