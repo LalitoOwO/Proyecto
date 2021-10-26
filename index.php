@@ -39,7 +39,7 @@ else {
 ?>
 
 
-#REGISTRO de USUARIOS /INICIAR SESIÓN
+
 
 <!DOCTYPE html>
  <html>
