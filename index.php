@@ -6,8 +6,6 @@ require_once('conex.php');
 
 if(isset($_POST['btnLogin'])){
 
-#$userLogin=$_POST[‘userLogin’];
-#$passLogin=$_POST[‘passLogin’];
 $userLogin = $_POST['userLogin'];
 $passLogin = $_POST['passLogin'];
 	
