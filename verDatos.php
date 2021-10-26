@@ -66,6 +66,8 @@ $resultadoDatos=$conexion->query($verDatos);
 <br />
    <br />
 
+	 <a href="verDatos.php?salir=1"> Cerrar Sesion </a>
+	 <br />
  </body>
  </html>
 
