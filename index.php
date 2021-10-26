@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
 #Iniciar sesión
 
 require_once('conex.php');
