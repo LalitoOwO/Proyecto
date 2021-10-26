@@ -1,0 +1,16 @@
+#Crear tablas en Heidi
+#Datos
+CREATE TABLE datos (
+id INT PRIMARY KEY ,
+stats VARCHAR (10),
+fecha DATE,
+hora TIME
+);
+
+#Usuarios
+CREATE TABLE usuarios (
+id_user INT PRIMARY KEY ,
+usuario VARCHAR (25),
+pass VARCHAR (50)
+);
+
